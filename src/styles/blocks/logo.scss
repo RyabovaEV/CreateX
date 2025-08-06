@@ -1,0 +1,25 @@
+@use '../helpers' as *;
+
+.logo {
+  display: flex;
+  align-items: center;
+  column-gap: rem(4);
+  color: var(--gray-900);
+
+  & svg {
+    stroke: none;
+  }
+
+  &__create {
+    color: inherit;
+  }
+
+  &__x {
+    color: var(--primary);
+  }
+
+  @include hover {
+    color: var(--primary);
+  }
+
+}

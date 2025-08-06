@@ -1,0 +1,48 @@
+@use '../helpers' as *;
+
+.header {
+  padding-block: rem(20);
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  animation-name: scrolling-header;
+  animation-fill-mode: both;
+  animation-timeline: scroll();
+  animation-range: 0 50px;
+
+
+  @keyframes scrolling-header {
+    to {
+      border-bottom: 2px solid var(--primary);
+    }
+  }
+
+
+  &__container {
+    display: flex;
+    align-items: center;
+  }
+
+  &__logo {
+    margin-right: fluid(60,20);
+  }
+
+  &__menu {
+    margin-right: auto;
+  }
+
+  &__actions {
+    display: flex;
+    column-gap: rem(36);
+    align-items: center;
+
+    &-link {
+      display: inline-flex;
+      align-items: center;
+      column-gap: rem(8);
+      font-weight: 700;
+    }
+  }
+}

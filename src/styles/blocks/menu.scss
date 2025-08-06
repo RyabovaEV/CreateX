@@ -1,0 +1,19 @@
+@use '../helpers' as *;
+
+.menu {
+  &__list {
+    display: flex;
+    column-gap: fluid(40,20);
+
+    &-link {
+      font-size: rem(18);
+      font-weight: 700;
+      white-space: nowrap;
+
+      &.is-active {
+        color: var(--primary);
+      }
+    }
+  }
+
+}

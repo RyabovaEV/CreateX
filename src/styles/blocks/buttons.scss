@@ -1,0 +1,49 @@
+@use '../helpers' as *;
+
+.button {
+  display: inline-flex;
+  padding: fluid(13,8) fluid(40,30);
+  cursor: pointer;
+  border: 1px solid transparent;
+  background: none;
+  border-radius: var(--border-raduis);
+  color: var(--white);
+  font-size: rem(16);
+  transition-duration: var(--transition-duration);
+
+  &--bg{
+    background: var(--gradient-button);
+    background-size: 500% 500%;
+    &:hover,
+    &:active {
+      animation: gradientFlow 2s ease infinite;
+      color: var(--white);
+    }
+  }
+
+  &--border {
+    border: var(--border-primary);
+    color: var(--primary);
+    transition: all .3s;
+
+    &:hover,
+    &:active {
+      background: var(--gradient-button);
+      color: var(--white);
+      background-size: 500% 500%;
+      animation: gradientFlow 2s ease infinite;
+    }
+  }
+}
+
+@keyframes gradientFlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

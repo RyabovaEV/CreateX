@@ -1,0 +1,43 @@
+@use 'helpers' as *;
+
+.container {
+    max-width: calc(var(--container-width) + var(--container-padding-x) * 2);
+    margin-inline: auto;
+    padding-inline: var(--container-padding-x);
+}
+
+.visually-hidden {
+    @include visually-hidden;
+}
+
+.hidden-mobile {
+    @include mobile {
+        display: none;
+    }
+}
+
+.visible-mobile {
+    @include mobile-above {
+        display: none;
+    }
+}
+
+.bg-red {
+    position: relative;
+    z-index: 0;
+
+    &::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: var(--gradient-button);
+        opacity: 0.2;
+        z-index: -1;
+    }
+}
+
+svg {
+    stroke: currentColor;
+    fill: currentColor;
+}
+

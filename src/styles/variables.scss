@@ -1,0 +1,43 @@
+@use 'helpers' as *;
+
+:root {
+    --white: #fff;
+    --primary: #ff3f3a;
+    --secondary: #ffcf2d;
+    --success: #03cea4;
+    --danger: #ff4242;
+    --warning: #f89828;
+    --info: #5a87fc;
+    --gray-900: #1e212c;
+    --gray-800: #424551;
+    --gray-700: #787a80;
+    --gray-600: #9a9ca5;
+    --gray-500: #b3b7bc;
+    --gray-400: #d7dadd;
+    --gray-300: #e5e8ed;
+    --gray-200: #f4f5f6;
+    --gray-100: #f9f9f9;
+
+  --gradient-team: linear-gradient(180deg, rgba(30, 33, 44, 0) 43.9%, rgba(30, 33, 44, 0.03) 55.21%, rgba(30, 33, 44, 0.33) 68.73%, rgba(30, 33, 44, 0.56) 76.17%, rgba(30, 33, 44, 0.77) 83.75%, rgba(30, 33, 44, 0.92) 91.49%, #1e212c 100%);
+
+  --box-shadow: 0 4px 4px -4px rgba(30, 33, 44, 0.03), 0 12px 10px -6px rgba(154, 156, 165, 0.04), 0 30px 24px -10px rgba(154, 156, 165, 0.05), 0 80px 80px -20px rgba(154, 156, 165, 0.08);
+
+  --border-grey: #{rem(1)} solid var(--gray-300);
+  --border-grey-dashed: #{rem(1)} dashed var(--gray-300);
+  --border-grey-800: #{rem(1)} solid var(--gray-800);
+  --border-primary: #{rem(1)} solid var(--primary);
+  --border-danger: #{rem(1)} solid var(--danger);
+  --border-shadow: #{rem(1)} solid rgba(255, 255, 255, 0.2);
+
+  --border-raduis: #{rem(4)};
+
+  --gradient-button: linear-gradient(45deg, #ff3f3a 0%, #f75e05 100%);
+
+  --font-family: 'Lato', sans-serif;
+
+  --container-width: #{rem(1410)};
+  --container-padding-x: #{rem(15)};
+
+  --transition-duration: 0.2s;
+
+}

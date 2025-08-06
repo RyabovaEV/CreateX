@@ -1,0 +1,26 @@
+@use '../helpers' as *;
+
+.statistics {
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: fluid(66,40);
+
+    &-item {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: rem(12);
+      text-align: center;
+    }
+
+    &-circle {
+      @include square(rem(8));
+      background-color: var(--primary);
+      border-radius: 50%;
+    }
+
+  }
+}

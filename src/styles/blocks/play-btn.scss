@@ -1,0 +1,27 @@
+@use '../helpers' as *;
+
+.play-btn {
+  display: flex;
+  align-items: center;
+  column-gap: rem(19);
+  font-weight: 700;
+
+  &__icon {
+    @include square(rem(52));
+    @include flex-center;
+
+    color: var(--white);
+    background-color: var(--primary);
+    border-radius: 50%;
+    transition-duration: var(--transition-duration);
+
+    & svg {
+      padding-left: rem(3);
+    }
+  }
+
+  &:hover &__icon {
+    box-shadow: 0 0 0 16px rgba(255, 63, 58, 0.2);
+    color: var(--white);
+  }
+}

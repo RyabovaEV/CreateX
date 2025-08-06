@@ -1,0 +1,14 @@
+@use "fonts";
+@use "variables";
+@use "globals";
+@use "utils";
+@use '@a1rth/css-normalize';
+
+@use "blocks/header";
+@use "blocks/menu";
+@use "blocks/logo";
+@use "blocks/buttons";
+@use "blocks/hero";
+@use "blocks/title-page";
+@use "blocks/play-btn";
+@use "blocks/statistics";

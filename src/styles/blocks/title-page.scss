@@ -1,0 +1,21 @@
+@use '../helpers' as *;
+
+.title-page {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: rem(180);
+
+  &__description {
+    max-width: rem(500);
+  }
+
+  &__title {
+    margin: rem(25) 0 rem(60) rem(15);
+  }
+
+  &__buttons {
+    display: flex;
+    column-gap: rem(24);
+  }
+}
