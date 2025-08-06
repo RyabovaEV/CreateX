@@ -34,6 +34,11 @@
       animation: gradientFlow 2s ease infinite;
     }
   }
+
+  &--sml {
+    padding: fluid(10,6) fluid(32,25);
+    font-size: rem(14);
+  }
 }
 
 @keyframes gradientFlow {

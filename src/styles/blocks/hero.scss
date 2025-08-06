@@ -1,6 +1,7 @@
 @use '../helpers' as *;
 
 .hero {
+  position: relative;
   min-height: 100vh;
   display: flex;
   justify-content: space-between;
@@ -8,13 +9,14 @@
   flex-direction: column;
 
   &__container {
-    margin-top: rem(140);
-    padding-bottom: rem(80);
+    //margin-top: rem(140);
+    //padding-bottom: rem(80);
     width: 100%;
     flex-grow: 1;
     display: flex;
     flex-direction: column;
-    row-gap: rem(190);
+    justify-content: center;
+    row-gap: fluid(190,130);
   }
 
 }

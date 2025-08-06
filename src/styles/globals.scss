@@ -19,6 +19,9 @@ body {
 
 main {
     flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    row-gap: fluid(180, 120);
 }
 
 h1, .h1,

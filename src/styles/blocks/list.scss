@@ -1,0 +1,21 @@
+@use '../helpers' as *;
+
+.list {
+  display: flex;
+  flex-direction: column;
+  row-gap: rem(12);
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    column-gap: rem(16);
+    &-svg {
+      flex-shrink: 0;
+      color: var(--primary);
+      & use {
+        stroke: none;
+      }
+    }
+  }
+}

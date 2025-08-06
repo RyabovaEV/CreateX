@@ -1,0 +1,7 @@
+@use '../helpers' as *;
+
+.section-title {
+  display: flex;
+  flex-direction: column-reverse;
+  row-gap: rem(8);
+}
